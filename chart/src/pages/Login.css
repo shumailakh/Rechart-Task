@@ -1,0 +1,80 @@
+
+.bg-color{
+    background-color: #1976d2;
+    height: 100vh;
+}
+.padding{
+    padding-top: 150px;
+
+}
+.width{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.p2{
+    margin-top: 15px;
+}
+.card-header{
+    background-color:#0d4fbb
+}
+.text-green{
+    color: #fff; 
+    text-align: center;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.text-green{
+    font-weight: bold;
+}
+.margin{
+    margin:10px 45px
+}
+.w-30{
+   
+    height: 100%;
+    text-align: center;
+}
+.w-40{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.card{
+    
+    border: 3px solid #2874f0;
+}
+.bg-color-green{
+    background-color: #0d9f36;
+    vertical-align: middle;
+    margin: 15px;
+    padding: 10px 15px;
+    color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0px 2px;
+}
+.text-right{
+    text-align: right;
+}
+.home{
+    padding: 5px;
+}
+.slick-slide img {
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.cardHeight{
+    height:350px
+}
+.text-capitalise{
+    padding: 5px
+}
+.height{
+    height: 270px;
+}

@@ -14,7 +14,7 @@ import './Login.css'
 
 const Login = () => {
     const [user, setUser] = useState({
-        email: '',
+        username: '',
         password: ''
     });
     const navigate = useNavigate();
@@ -22,7 +22,7 @@ const Login = () => {
     const fromSubmit = (e) => {
         e.preventDefault();
       
-        if (user.email !== '' && user.password !== '') {
+        if (user.username !== '' && user.password !== '') {
             console.log(JSON.stringify(user));
             navigate("dashboard");
         }
@@ -34,7 +34,7 @@ const Login = () => {
         let data = { ...user };
         let name = e.target.name;
         let val = e.target.value;
-        if (name == 'email' || name == 'password') {
+        if (name == 'username' || name == 'password') {
             data = { ...data, [name]: val };
         }
         setUser(data);
@@ -63,7 +63,7 @@ const Login = () => {
                                         <Grid item xs={12} md={12}>
 
                                         <TextField id="outlined-basic"  variant="outlined"  type="text" 
-                                                value={user.email} name="email" onChange={onChange} className="width p2" placeholder='Enter UserID'/>
+                                                value={user.username} name="username" onChange={onChange} className="width p2" placeholder='Enter username'/>
                                        
                                         </Grid>
                                         <Grid item xs={12} md={12}>

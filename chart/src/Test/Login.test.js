@@ -36,11 +36,11 @@ jest.mock('react-router-dom', () => ({
 
 test('should have userid and password field ,also a submit button' , ()=>{
     render(<Login/>)
-    const UserIDField= screen.getByPlaceholderText(/Enter UserID/i);
+    const UserNameField= screen.getByPlaceholderText(/Enter username/i);
     const PasswordField = screen.getByPlaceholderText(/Enter Password/i);
     const SubmitButton = screen.getByText(/Submit/i)
 
-    expect(UserIDField).toBeInTheDocument();
+    expect(UserNameField).toBeInTheDocument();
     expect(PasswordField).toBeInTheDocument();
     expect(SubmitButton).toBeInTheDocument();
 })

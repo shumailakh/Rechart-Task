@@ -56,7 +56,7 @@ const Login = () => {
                         <Grid item xs={12} md={12}>
 
                             <CardComponent className='card mt-5'>
-                                <CardHeader title="Enter Login Details" />
+                                <CardHeader id="title" title="Enter Login Details" />
 
                                 <CardContent>
                                     <form>

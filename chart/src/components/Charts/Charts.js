@@ -33,10 +33,10 @@ const Root = styled.div`
 const Charts = () => {
 
   const [items, setItems] = useState([
-    { i: "Student A", x: 0, y: 0, w: 1, h: 1, chart: <LineChartComponent /> },
-    { i: "Student B", x: 1, y: 0, w: 1, h: 1, chart: <BarChartComponent /> },
-    { i: "Student C", x: 2, y: 0, w: 1, h: 1, chart: <AreaChartComponent /> },
-    { i: "Student D", x: 3, y: 0, w: 1, h: 1, chart: <ComposedChartComponent /> },
+    { i: "January", x: 0, y: 0, w: 1, h: 1, chart: <LineChartComponent /> },
+    { i: "Feburary", x: 1, y: 0, w: 1, h: 1, chart: <BarChartComponent /> },
+    { i: "March", x: 2, y: 0, w: 1, h: 1, chart: <AreaChartComponent /> },
+    { i: "April", x: 3, y: 0, w: 1, h: 1, chart: <ComposedChartComponent /> },
 
   ]);
 

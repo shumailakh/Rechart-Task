@@ -13,9 +13,29 @@ describe('<Login />', () => {
   it('clicking + fires a change event with the submit value', () => {
     const onChangeSpy = cy.spy().as('onChangeSpy')
     cy.mount(<MemoryRouter>
-      <Login onChangeSpy={onChangeSpy}/>
+      <Login onChangeSpy={onChangeSpy} />
     </MemoryRouter>)
     cy.get('.p2').click({ multiple: true })
-    
+
   })
+  it('should type username and password', () => {
+
+    const onChangeSpy = cy.spy().as('onChangeSpy')
+    cy.mount(<MemoryRouter>
+      <Login onChangeSpy={onChangeSpy} />
+    </MemoryRouter>)
+    cy.get('[type="text"]').type("shumaila")
+
+    cy.get('[type="password"]').type("test")
+
+  })
+  it('should submit the form', () => {
+
+    cy.mount(<MemoryRouter>
+      <Login/>
+    </MemoryRouter>)
+
+   cy.get('button[type="submit"]').click();
+
+  }) 
 })

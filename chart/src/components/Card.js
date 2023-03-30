@@ -1,11 +1,7 @@
-import React from 'react'
-import Card from '@mui/material/Card';
+import React from "react";
+import Card from "@mui/material/Card";
 const CardComponent = ({ children }) => {
-    return (
-        <Card>
-            {children}
-        </Card>
-    )
-}
+  return <Card>{children}</Card>;
+};
 
-export default CardComponent
+export default CardComponent;

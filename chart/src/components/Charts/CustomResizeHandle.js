@@ -22,7 +22,7 @@ const CustomHandle = (props) => (
       bottom: 0,
       right: 0,
       padding: 0,
-      cursor: "se-resize"
+      cursor: "se-resize",
     }}
     {...props}
   />

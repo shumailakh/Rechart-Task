@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   ComposedChart,
   Line,
@@ -10,9 +10,8 @@ import {
   Tooltip,
   Legend,
   ResponsiveContainer,
-} from 'recharts';
-import { data } from '../../Data/EmpolyeeData';
-
+} from "recharts";
+import { data } from "../../Data/EmpolyeeData";
 
 const ComposedChartComponent = () => {
   return (
@@ -37,7 +36,7 @@ const ComposedChartComponent = () => {
         <Line type="monotone" dataKey="uv" stroke="#ff7300" />
       </ComposedChart>
     </ResponsiveContainer>
-  )
-}
+  );
+};
 
-export default ComposedChartComponent
+export default ComposedChartComponent;

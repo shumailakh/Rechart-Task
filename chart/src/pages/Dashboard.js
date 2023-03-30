@@ -1,18 +1,15 @@
-import React from 'react'
-import Header from '../components/Header/Header';
-import Charts from '../components/Charts/Charts';
+import React from "react";
+import Header from "../components/Header/Header";
+import Charts from "../components/Charts/Charts";
 
 const Dashboard = () => {
-    return (
-        <>
-            <Header />
+  return (
+    <>
+      <Header />
 
-            <Charts />
+      <Charts />
+    </>
+  );
+};
 
-
-        </>
-
-    )
-}
-
-export default Dashboard
+export default Dashboard;

@@ -1,0 +1,17 @@
+{
+    "user": [
+      {},
+      {
+        "id": "shab",
+        "email": "shav@gmail.com",
+        "number": "7896541236",
+        "password": "test"
+      },
+      {
+        "id": "khan",
+        "email": "ss@gmail.com",
+        "number": "1234567890",
+        "password": "test"
+      }
+    ]
+  }

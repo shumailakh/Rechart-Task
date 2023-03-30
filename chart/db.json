@@ -24,6 +24,12 @@
       "email": "son@gmail.com",
       "number": "1298039393",
       "password": "demo"
+    },
+    {
+      "id": "kha",
+      "email": "ss@gmail.com",
+      "number": "8530456636",
+      "password": "demo"
     }
   ]
 }

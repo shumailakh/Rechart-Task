@@ -1,6 +1,5 @@
 {
   "user": [
-    {},
     {
       "id": "shab",
       "email": "shav@gmail.com",
@@ -8,28 +7,51 @@
       "password": "test"
     },
     {
-      "id": "khan",
-      "email": "ss@gmail.com",
+      "id": "ss",
+      "email": "ma@gmail.com",
       "number": "1234567890",
       "password": "test"
     },
     {
-      "id": "subuhikhan",
-      "email": "ss@gmail.com",
+      "id": "khan22",
+      "email": "q@gmail.com",
       "number": "1234567890",
-      "password": "tttt"
-    },
-    {
-      "id": "sonali",
-      "email": "son@gmail.com",
-      "number": "1298039393",
       "password": "demo"
     },
     {
-      "id": "kha",
-      "email": "ss@gmail.com",
+      "id": "shabkhan",
+      "email": "shab@gmail.com",
+      "number": "7896541233",
+      "password": "test"
+    },
+    {
+      "id": "st",
+      "email": "de@gmail.com",
+      "number": "12726364664",
+      "password": "test"
+    }
+  ],
+  "student": [
+    {
+      "id": 2,
+      "name": "khan2",
+      "email": "shumk@gmail.com",
       "number": "8530456636",
-      "password": "demo"
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "tab111",
+      "email": "kh@gmail.com",
+      "number": "1234567890",
+      "active": true
+    },
+    {
+      "id": 5,
+      "name": "",
+      "email": "",
+      "number": "",
+      "active": true
     }
   ]
 }

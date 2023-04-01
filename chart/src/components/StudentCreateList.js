@@ -25,7 +25,7 @@ const StudentCreateList = () => {
         setStudentData(response);
       })
       .catch((err) => {
-        console.log(err.message);
+       alert(err.message);
       });
   }, []);
 const loadEdit=(id)=>{
@@ -42,7 +42,7 @@ const removeItem=(id)=>{
         alert('Removed Successfully')
         window.location.reload()
     }).catch((err)=>{
-    console.log(err.message)
+    alert(err.message)
     })
    }
 }

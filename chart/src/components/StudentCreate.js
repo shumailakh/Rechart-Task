@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -7,10 +7,16 @@ import CardHeader from "@mui/material/CardHeader";
 import Container from "@mui/material/Container";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
-import { Box, Button, TextField,FormControlLabel,Checkbox } from "@mui/material";
-import '../pages/Login.css'
+import {
+  Box,
+  Button,
+  TextField,
+  FormControlLabel,
+  Checkbox,
+} from "@mui/material";
+import "../pages/Login.css";
 const StudentCreate = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [id, setId] = useState("");
   const [name, setName] = useState("");
@@ -26,7 +32,7 @@ const StudentCreate = () => {
       number,
       active,
     };
-    console.log(create)
+
     fetch("http://localhost:8000/student", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -40,19 +46,19 @@ const StudentCreate = () => {
         alert(err.message);
       });
   };
-  
-    return (
-      <div>
-        <Container className="padding">
-          <div
-            style={{
-              justifyContent: "center",
-              alignContent: "center",
-              alignItems: "center",
-              margin: "auto",
-              width: "50%",
-            }}
-          >
+
+  return (
+    <div>
+      <Container className="padding">
+        <div
+          style={{
+            justifyContent: "center",
+            alignContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            width: "50%",
+          }}
+        >
           <Box color="white">
             <Grid item xs={12} md={12}>
               <CardComponent className="card mt-5">
@@ -60,13 +66,12 @@ const StudentCreate = () => {
 
                 <CardContent>
                   <form onSubmit={handleSubmit}>
-                  <Grid item xs={12} md={12}>
+                    <Grid item xs={12} md={12}>
                       <TextField
                         id="outlined-basic"
                         variant="outlined"
                         type="text"
                         value={id}
-                        
                         className="width p2"
                         disabled="disabled"
                         placeholder="Student ID"
@@ -78,7 +83,6 @@ const StudentCreate = () => {
                         variant="outlined"
                         type="text"
                         value={name}
-                        
                         className="width p2"
                         onChange={(e) => setName(e.target.value)}
                         placeholder="Enter username"
@@ -90,7 +94,6 @@ const StudentCreate = () => {
                         variant="outlined"
                         type="email"
                         value={email}
-                        
                         onChange={(e) => setEmail(e.target.value)}
                         className="width p2"
                         placeholder="Enter Email ID"
@@ -101,7 +104,6 @@ const StudentCreate = () => {
                         id="outlined-basic"
                         variant="outlined"
                         type="text"
-                        
                         value={number}
                         onChange={(e) => setNumber(e.target.value)}
                         placeholder="Enter Mobile Number"
@@ -109,7 +111,16 @@ const StudentCreate = () => {
                       />
                     </Grid>
                     <Grid item xs={12} md={12} className="left">
-                    <FormControlLabel control={<Checkbox defaultChecked  onChange={(e) => setActive(e.target.checked)} checked={active}/>} label="Active" />
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            defaultChecked
+                            onChange={(e) => setActive(e.target.checked)}
+                            checked={active}
+                          />
+                        }
+                        label="Active"
+                      />
                     </Grid>
 
                     <Grid item xs={12} md={12}>
@@ -125,10 +136,10 @@ const StudentCreate = () => {
               </CardComponent>
             </Grid>
           </Box>
-          </div>
-        </Container>
-      </div>
-    );
-}
+        </div>
+      </Container>
+    </div>
+  );
+};
 
-export default StudentCreate
+export default StudentCreate;

@@ -8,9 +8,9 @@ import CardContent from "@mui/material/CardContent";
 import { Grid, TextField } from "@mui/material";
 const StudentDetail = () => {
   const { empid } = useParams();
-  console.log("id", empid);
+  
   const [studentDetails, setStudentDetails] = useState({});
-  console.log(studentDetails);
+
   useEffect(() => {
     fetch("http://localhost:8000/student/" + empid)
       .then((res) => {
@@ -20,7 +20,7 @@ const StudentDetail = () => {
         setStudentDetails(response);
       })
       .catch((err) => {
-        console.log(err.message);
+       alert(err.message);
       });
   }, []);
   return (
@@ -50,7 +50,7 @@ const StudentDetail = () => {
               value={studentDetails.email}
               className="width p2"
               readonly
-              placeholder="Enter username"
+              placeholder="Enter Email"
             />
             <TextField
             id="outlined-basic"
@@ -59,7 +59,7 @@ const StudentDetail = () => {
             value={studentDetails.number}
             className="width p2"
             readonly
-            placeholder="Enter username"
+            placeholder="Enter Number"
           />
                 </>
             

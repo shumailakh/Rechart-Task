@@ -6,6 +6,7 @@ describe("template spec", () => {
     cy.get("input[name=username]").type("text");
 
     cy.get("input[name=password]").type("password");
+    
   });
   it("Visit Dashboard Url", () => {
     cy.visit("http://172.27.232.169:3000/dashboard");

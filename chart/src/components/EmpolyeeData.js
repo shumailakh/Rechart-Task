@@ -23,7 +23,7 @@ const EmpolyeeData = () => {
         setStudentData(response);
       })
       .catch((err) => {
-        console.log(err.message);
+        alert(err.message);
       });
   }, []);
 
@@ -47,11 +47,11 @@ const EmpolyeeData = () => {
                
                 </TableRow>
               </TableHead>
-              <TableBody>
+              <TableBody data-testid="title">
                 {studentData &&
                   studentData.map((item) => {
                     return (
-                      <TableRow key={item.id}>
+                      <TableRow key={item.id} data-testid="description">
                         <TableCell component="th" scope="row">
                           {item.id}
                         </TableCell>

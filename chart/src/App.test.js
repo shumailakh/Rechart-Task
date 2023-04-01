@@ -4,11 +4,15 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import App from "./App";
 import Dashboard from "./pages/Dashboard";
+import StudentCreate from "./components/StudentCreate";
+import StudentCreateList from "./components/StudentCreateList";
+import StudentDetail from "./components/StudentDetail";
+import StudentEditProfile from "./components/StudentEditProfile";
 
 jest.mock("./pages/Login");
 jest.mock("./pages/Register");
 jest.mock("./pages/Dashboard");
-
+jest.mock("./components/StudentCreate");
 describe("Tests for App Router", () => {
   test("Should render register as default page ", () => {
     Register.mockImplementation(() => <div>Register</div>);
@@ -43,5 +47,18 @@ describe("Tests for App Router", () => {
     );
 
     expect(screen.getByText("Dashboard")).toBeInTheDocument();
+  });
+  test("Should render All details Page ", () => {
+
+
+    render(
+      <MemoryRouter>
+        <StudentCreate />
+        <StudentCreateList/>
+        <StudentDetail/>
+        <StudentEditProfile/>
+      </MemoryRouter>
+    );
+
   });
 });

@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { render, screen, act } from "@testing-library/react";
 import EmpolyeeData from "../components/EmpolyeeData";
 
 beforeEach(() => render(<EmpolyeeData />));
@@ -28,10 +28,18 @@ test("works", async () => {
   expect(json.length).toEqual(0);
 });
 
+
+test("load the tbody with id", async () => {
+  await act(async () => {
+    render(<EmpolyeeData />);
+    expect(screen.getByTestId("title")).toBeInTheDocument();
+  });
+});
 test("Dashboard Component", () => {
   render(<EmpolyeeData />);
 });
 test("Renders Dashboard correctly", () => {
   const { queryAllByText } = render(<EmpolyeeData />);
+
   expect(queryAllByText(/Registered Student/i)).toBeInTheDocument;
 });

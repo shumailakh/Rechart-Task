@@ -1,51 +1,9 @@
 {
   "user": [
     {
-      "id": "khan",
-      "email": "de@gmail.com",
-      "number": "12726364664",
-      "password": "test"
-    },
-    {
-      "id": "Mayank",
-      "email": "shab@gmail.com",
-      "number": "7896541233",
-      "password": "demo"
-    },
-    {
-      "id": "khan1",
-      "email": "kh@gmail.com",
-      "number": "1234567890",
-      "password": "test"
-    },
-    {
-      "id": "demo22",
-      "email": "kh@gmail.com",
-      "number": "1234567890",
-      "password": "test"
-    },
-    {
-      "id": "sheh",
+      "id": "demo",
       "email": "ma@gmail.com",
       "number": "12345678901",
-      "password": "1111"
-    },
-    {
-      "id": "semi",
-      "email": "de@gmail.com",
-      "number": "12726364664",
-      "password": "test"
-    },
-    {
-      "id": "geeta",
-      "email": "kh@gmail.com",
-      "number": "1234567890",
-      "password": "test"
-    },
-    {
-      "id": "sonali",
-      "email": "ge@gmail.com",
-      "number": "1233333333",
       "password": "test"
     }
   ],
@@ -55,6 +13,27 @@
       "name": "sonali",
       "email": "de@gmail.com",
       "number": "1234567899",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "suma",
+      "email": "de@gmail.com",
+      "number": "12726364664",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "shau",
+      "email": "ma@gmail.com",
+      "number": "12345678901",
+      "active": true
+    },
+    {
+      "id": 4,
+      "name": "khanaAB",
+      "email": "ma@gmail.com",
+      "number": "12345678901",
       "active": true
     }
   ]

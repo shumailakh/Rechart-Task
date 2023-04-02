@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^12.8.1"
+    "cypress": "^12.8.1",
+    "jest-fetch-mock": "^3.0.3"
   }
 }

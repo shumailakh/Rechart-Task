@@ -14,6 +14,7 @@ import '../pages/Login.css'
 
 const EmpolyeeData = () => {
   const [studentData, setStudentData] = useState(null);
+
   useEffect(() => {
     fetch("http://localhost:8000/user")
       .then((res) => {

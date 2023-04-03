@@ -5,6 +5,18 @@
       "email": "ma@gmail.com",
       "number": "12345678901",
       "password": "test"
+    },
+    {
+      "id": "shumaila",
+      "email": "test@gmail.com",
+      "number": "8530456636",
+      "password": "test"
+    },
+    {
+      "id": "she",
+      "email": "shab@gmail.com",
+      "number": "7896541233",
+      "password": "test"
     }
   ],
   "student": [
@@ -20,6 +32,13 @@
       "name": "shum",
       "email": "kh@gmail.com",
       "number": "1234567890",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "shumaila",
+      "email": "s@gmail.com",
+      "number": "1236547896",
       "active": true
     }
   ]

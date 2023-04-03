@@ -7,7 +7,6 @@ describe("Register spec", () => {
     cy.get('[placeholder="Enter Email ID"]').type("test@gmail.com");
     cy.get("button").contains("button", "Submit").click();
 
-    cy.get(".p2").click({ multiple: true });
     cy.visit("http://172.27.232.169:3000/login");
   });
 });

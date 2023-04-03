@@ -9,14 +9,4 @@ describe("<StudentCreateList />", () => {
       </MemoryRouter>
     );
   });
-  // it("renders", () => {
-  //   // see: https://on.cypress.io/mounting-react
-  //   cy.mount(
-  //     <MemoryRouter>
-  //       <StudentCreateList />
-  //     </MemoryRouter>
-
-  //   );
-
-  // });
 });

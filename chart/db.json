@@ -10,30 +10,16 @@
   "student": [
     {
       "id": 1,
-      "name": "sonali",
-      "email": "de@gmail.com",
-      "number": "1234567899",
+      "name": "demo",
+      "email": "ma@gmail.com",
+      "number": "12345678901",
       "active": true
     },
     {
       "id": 2,
-      "name": "suma",
-      "email": "de@gmail.com",
-      "number": "12726364664",
-      "active": true
-    },
-    {
-      "id": 3,
-      "name": "shau",
-      "email": "ma@gmail.com",
-      "number": "12345678901",
-      "active": true
-    },
-    {
-      "id": 4,
-      "name": "khanaAB",
-      "email": "ma@gmail.com",
-      "number": "12345678901",
+      "name": "shum",
+      "email": "kh@gmail.com",
+      "number": "1234567890",
       "active": true
     }
   ]

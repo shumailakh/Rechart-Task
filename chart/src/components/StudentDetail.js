@@ -25,6 +25,15 @@ const StudentDetail = () => {
   }, []);
   return (
     <Container>
+       <div
+          style={{
+            justifyContent: "center",
+            alignContent: "center",
+            alignItems: "center",
+            margin: "auto",
+            width: "50%",
+          }}
+        >
       <Grid item xs={12} md={12}>
         <CardComponent>
             
@@ -68,7 +77,7 @@ const StudentDetail = () => {
         </CardContent>
         </CardComponent>
       </Grid>
-    
+      </div>
     </Container>
   );
 };

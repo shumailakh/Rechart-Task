@@ -17,16 +17,21 @@
       "email": "shab@gmail.com",
       "number": "7896541233",
       "password": "test"
+    },
+    {
+      "id": "Ali",
+      "email": "ma@gmail.com",
+      "number": "12345678901",
+      "password": "demo"
+    },
+    {
+      "id": "Sha",
+      "email": "sh@gmail.com",
+      "number": "85304569666",
+      "password": "test"
     }
   ],
   "student": [
-    {
-      "id": 1,
-      "name": "demo",
-      "email": "ma@gmail.com",
-      "number": "12345678901",
-      "active": true
-    },
     {
       "id": 2,
       "name": "shum",
@@ -40,6 +45,14 @@
       "email": "s@gmail.com",
       "number": "1236547896",
       "active": true
-    }
+    },
+    {
+      "id": 4,
+      "name": "sam",
+      "email": "sam@gmail.com",
+      "number": "1234567",
+      "active": true
+    },
+
   ]
 }

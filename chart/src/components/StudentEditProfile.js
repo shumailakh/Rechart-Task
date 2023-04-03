@@ -66,80 +66,90 @@ const StudentEditProfile = () => {
   };
   return (
     <Container>
-      <Grid item xs={12} md={12}>
-        <CardComponent>
-          <CardHeader title="Edit Student Details" />
-          <CardContent>
-            <form onSubmit={handleSubmit}>
-              <Grid item xs={12} md={12}>
-                <TextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  type="text"
-                  value={id}
-                  className="width p2"
-                  disabled="disabled"
-                  placeholder="Enter Id"
-                />
-              </Grid>
-              <Grid item xs={12} md={12}>
-                <TextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  type="text"
-                  value={name}
-                  className="width p2"
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Enter username"
-                />
-              </Grid>
-              <Grid item xs={12} md={12}>
-                <TextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="width p2"
-                  placeholder="Enter Email ID"
-                />
-              </Grid>
-              <Grid item xs={12} md={12}>
-                <TextField
-                  id="outlined-basic"
-                  variant="outlined"
-                  type="text"
-                  value={number}
-                  onChange={(e) => setNumber(e.target.value)}
-                  placeholder="Enter Mobile Number"
-                  className="width p2"
-                />
-              </Grid>
-              <Grid item xs={12} md={12} className="left">
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      defaultChecked
-                      onChange={(e) => setActive(e.target.checked)}
-                      checked={active}
-                    />
-                  }
-                  label="Active"
-                />
-              </Grid>
+      <div
+        style={{
+          justifyContent: "center",
+          alignContent: "center",
+          alignItems: "center",
+          margin: "auto",
+          width: "50%",
+        }}
+      >
+        <Grid item xs={12} md={12}>
+          <CardComponent>
+            <CardHeader title="Edit Student Details" />
+            <CardContent>
+              <form onSubmit={handleSubmit}>
+                <Grid item xs={12} md={12}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    type="text"
+                    value={id}
+                    className="width p2"
+                    disabled="disabled"
+                    placeholder="Enter Id"
+                  />
+                </Grid>
+                <Grid item xs={12} md={12}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    type="text"
+                    value={name}
+                    className="width p2"
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Enter username"
+                  />
+                </Grid>
+                <Grid item xs={12} md={12}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="width p2"
+                    placeholder="Enter Email ID"
+                  />
+                </Grid>
+                <Grid item xs={12} md={12}>
+                  <TextField
+                    id="outlined-basic"
+                    variant="outlined"
+                    type="text"
+                    value={number}
+                    onChange={(e) => setNumber(e.target.value)}
+                    placeholder="Enter Mobile Number"
+                    className="width p2"
+                  />
+                </Grid>
+                <Grid item xs={12} md={12} className="left">
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        defaultChecked
+                        onChange={(e) => setActive(e.target.checked)}
+                        checked={active}
+                      />
+                    }
+                    label="Active"
+                  />
+                </Grid>
 
-              <Grid item xs={12} md={12}>
-                <Button variant="outlined" type="submit" className="p2">
-                  Save
-                </Button>
-                <a href="/" className="p2 btn">
-                  Back
-                </a>
-              </Grid>
-            </form>
-          </CardContent>
-        </CardComponent>
-      </Grid>
+                <Grid item xs={12} md={12}>
+                  <Button variant="outlined" type="submit" className="p2">
+                    Save
+                  </Button>
+                  <a href="/" className="p2 btn">
+                    Back
+                  </a>
+                </Grid>
+              </form>
+            </CardContent>
+          </CardComponent>
+        </Grid>
+      </div>
     </Container>
   );
 };
